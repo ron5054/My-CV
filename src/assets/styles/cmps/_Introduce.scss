@@ -1,0 +1,29 @@
+.introduce-container {
+    margin-top: 10rem;
+    grid-column: 2;
+
+    @include for-medium-layout {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 4.875rem;
+        font-weight: 400;
+
+        @include for-mobile-layout {
+            font-size: 2.875rem;
+        }
+
+        @include for-medium-layout {
+            font-size: 2.875rem;
+        }
+
+        span {
+            color: $clr1;
+        }
+    }
+
+    small {
+        font-size: 1.2rem;
+    }
+}
